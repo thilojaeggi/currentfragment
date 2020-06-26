@@ -1,0 +1,6 @@
+    String getCurrentFragment(){
+        Fragment visiblefragment = getSupportFragmentManager()
+                .findFragmentById(R.id.newusercontainer);
+        String[] currentFragment = visiblefragment.toString().split("\\{");
+        return currentFragment[0].toString();
+    }
